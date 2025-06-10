@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="left-section">
+        <div class="logo">
+          <img
+            src="https://images.unsplash.com/photo-1741335661527-39595b58807f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNvbGFyJTIwbG9nbyUyMGluJTIwc3F1YXJlfGVufDB8fDB8fHww"
+            alt="Solar Logo"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <a href="#" class="contact-button">Contact Us</a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About Us</a>
+      <a href="#">Projects</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Contact</a>
+      <a href="#" class="contact-button" style="width: fit-content"
+        >Contact Us</a
+      >
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="hero"
+      style="
+        background: url('https://media.istockphoto.com/id/174933435/photo/wind-turbines-and-solar-panels-on-green-grass-with-blue-sky.webp?a=1&b=1&s=612x612&w=0&k=20&c=IYlfD_BqPwsjk1bzhtuVVrcj3288aZp8dwmJS-_50TI=')
+          no-repeat center center/cover;
+      "
+    >
+      <div class="overlay">
+        <h1>Innovating for a <strong>Sustainable Future</strong></h1>
+        <p>
+          HIRAI VENTURES drives progress across diverse sectors, offering
+          expertise in
+          EV infrastructure, solar solutions, waste management, financial
+          services, and more.
+        </p>
+        <a href="#" class="cta-button">Discover Our Solutions</a>
+      </div>
+    </section>
+
+    <section class="core-services">
+      <h2>Our Core Services</h2>
+      <div class="services-grid">
+        <a href="#" class="service-card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1717014103890-bf3b1aa41890?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZXYlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D"
+            alt="EV Icon"
+          />
+          <div class="card-hover">
+            <h3>EV & Charging Stations</h3>
+            <p>
+              Developing sustainable electric vehicle infrastructure and
+              charging solutions.
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="service-card">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1664304395317-1f9ca7b4ab9a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWdybyUyMGltYWdlfGVufDB8fDB8fHww"
+            alt="Agro Icon"
+          />
+          <div class="card-hover">
+            <h3>Agro Organic Food Waste Management</h3>
+            <p>
+              Converting agricultural and food waste into valuable resources.
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="service-card">
+          <img
+            src="https://media.istockphoto.com/id/836284400/photo/modern-keyboard-wih-insurance-button.webp?a=1&b=1&s=612x612&w=0&k=20&c=pGAvOKT_HF_ouWBHLa9ufBJsJaVDLQ9kIi7rau5zS_A="
+            alt="Insurance Icon"
+          />
+          <div class="card-hover">
+            <h3>Insurance & Investment</h3>
+            <p>
+              Financial services for secure investments and insurance coverage.
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1607109792980-a507686ae731?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGxvdHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="Land Icon"
+          />
+          <div class="card-hover">
+            <h3>Land Development & Tendering</h3>
+            <p>Strategic land development and tendering processes.</p>
+          </div>
+        </a>
+
+        <a href="#" class="service-card">
+          <img
+            src="https://media.istockphoto.com/id/1470816030/photo/group-of-adult-students-paying-attention-to-female-lecturer.webp?a=1&b=1&s=612x612&w=0&k=20&c=JCNWSJv4wt2tqnQ5E_xBvflO5inJg2Ah1e4_28YI-4U="
+            alt="Training Icon"
+          />
+          <div class="card-hover">
+            <h3>Training & Consultations</h3>
+            <p>Training programs and consultations for innovation.</p>
+          </div>
+        </a>
+
+        <a href="#" class="service-card">
+          <img
+            src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZW50cmVwcmVuZXVyfGVufDB8fDB8fHww"
+            alt="IT Icon"
+          />
+          <div class="card-hover">
+            <h3>IT Solutions & Services</h3>
+            <p>Tech solutions and support for businesses.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="about-hirai">
+      <div class="about-container">
+        <div class="about-image">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661605653366-b1a6a6831cd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGVhZGVyc2hpcHxlbnwwfHwwfHx8MA%3D%3D"
+            alt="About Hirai Ventures"
+          />
+        </div>
+        <div class="about-text">
+          <h2>About Hirai Ventures</h2>
+          <p>
+            Hirai Ventures is dedicated to driving innovation and sustainability
+            across diverse sectors including renewable energy, EV
+            infrastructure, and advanced technology services. Our mission is to
+            create a better future by empowering communities through smart and
+            scalable solutions. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Incidunt architecto tempore animi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-projects">
+      <h2>Featured Projects</h2>
+      <div class="projects-flex">
+        <div class="project-card">
+          <img
+            src="https://media.istockphoto.com/id/966112948/photo/electric-cars.webp?
+a=1&b=1&s=612x612&w=0&k=20&c=20BhbJl_2CvB9Ulkahdbp77lMBuwRfjgBIQmc9XvJmA="
+            alt="City EV Hub Initiative"
+          />
+          <div class="card-text">
+            <h3>City EV Hub Initiative</h3>
+            <p>EV & Charging</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://media.istockphoto.com/id/1941944996/photo/close-up-of-a-man-peeling-vegetables-and-making-compost-from-leftovers-at-an-open-kitchen.webp?a=1&b=1&s=612x612&w=0&k=20&c=-FBUaj-FDBGXEATipRl-3v5qHbJx6jRsfPxggd2IFJU=
+"
+            alt="Bio-Compost Facility"
+          />
+          <div class="card-text">
+            <h3>Bio-Compost Facility</h3>
+            <p>Waste Management</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://images.unsplash.com/photo-1601382270349-49c15bddf738?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8U3RyYXRlZ2ljJTIwUG9ydGZvbGlvJTIwR3Jvd3RofGVufDB8fDB8fHww"
+            alt="Strategic Portfolio Growth"
+          />
+          <div class="card-text">
+            <h3>Strategic Portfolio Growth</h3>
+            <p>Investment</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://media.istockphoto.com/id/981339754/photo/silhouette-of-engineer-and-construction-team-working-at-site-over-blurred-background-sunset.webp?a=1&b=1&s=612x612&w=0&k=20&c=ftbsxL76vkKvsB8WUO-FMrCHyjrRJKzLpZ_evRWJR4E="
+            alt="Green City Landmark"
+          />
+          <div class="card-text">
+            <h3>Green City Landmark</h3>
+            <p>Land Development</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="https://media.istockphoto.com/id/1490859962/photo/power-soft-skills-multi-skills-responsibility-hr-human-resources-concept-personal-attribute.webp?a=1&b=1&s=612x612&w=0&k=20&c=NypVbnQPFKvAm1Qy6KCUz4LmMADceh7hA-cBHfMAF7Y="
+            alt="Digital Skills Empowerment"
+          />
+          <div class="card-text">
+            <h3>Digital Skills Empowerment</h3>
+            <p>Training</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="testimonials">
+      <h2>What Our Clients Say</h2>
+
+      <div class="carousel-container">
+        <button class="nav-button left" onclick="prevSlide()">❮</button>
+        <div class="carousel-wrapper">
+          <div class="carousel-track" id="carouselTrack">
+            <!-- Cards inserted by JS -->
+          </div>
+        </div>
+        <button class="nav-button right" onclick="nextSlide()">❯</button>
+
+        <div class="pagination" id="paginationDots"></div>
+      </div>
+    </div>
+
+    <section class="contact-section">
+    <h2>Get In Touch With Us</h2>
+    <p>We'd love to hear from you. Whether you have a question about our services, need support, or want to explore partnership opportunities, our team is ready to assist.</p>
+
+    <div class="contact-details">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>info@hiraiventures.com</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <span>+1 (555) 123-4567</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>123 Venture Way, Innovation City, CA 90210</span>
+      </div>
+    </div>
+
+    <button class="contact-btn">Get in Touch</button>
+  </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
